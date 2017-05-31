@@ -1,0 +1,297 @@
+/* common */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Ariel', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+/*generic links*/
+a:link,
+a:visited{
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.5s, color 0.5s;
+}
+a:hover,
+a:active{
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 80px 0 0 0;
+    
+}
+
+h1, 
+h2,
+h3{
+    letter-spacing: 1px;
+    text-transform:uppercase;
+    font-weight: 300;
+}
+
+h1{
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+    word-spacing: 4px;
+    font-size: 240%;   
+}
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+h3{
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+
+/* header section */
+header{
+    background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url(external/img/bg1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header div{
+    position: absolute;
+    width: 1140px;
+    top: 55%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+#typed{
+    color: #e67e22;
+    margin-top: 0;
+    margin-bottom: 50px;
+    word-spacing: 4px;
+    font-size: 240%;
+    text-transform:capitalize;
+    font-weight: 400;
+}
+
+.logo{
+    height: 100px;
+    width: auto 0;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+}
+
+.into_text{
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.btn:link,
+.btn:visited{
+    margin-top: 30px;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 30px;
+    color: #fff;
+    transition: background-color 0.5s, border 0.5s, color 0.5s;
+}
+
+.btn:link,
+.btn:visited{
+   border: 2px solid #e67e22; 
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 2px solid ##0173f8;
+    color: #fff;
+}
+.btn-ghost:hover,
+.btn-ghost:active{
+    background-color: #e67e22;
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+/* expertise section */
+
+.icon-big{
+    display: block;
+    color: #e67e22;
+    font-size: 400%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.skill-description{
+    text-align: center;
+    line-height: 145%;
+    word-spacing: 2px;
+}
+
+/* expertise section */
+
+.show-case{
+    list-style: none;
+    width: 100%;
+}
+.show-case li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+.work-photo{
+    width:100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.work-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: 200px;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+    background-size: cover;
+}
+.work-photo img:hover{
+    opacity: 1;
+    transform: scale(1.04);
+}
+
+/* review section */
+
+.section-testimonal{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(external/img/bg2.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+blockquote{
+    padding: 2px;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote:before{
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img{
+    border-radius: 50%;
+    height: 45px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* about me section */
+
+.about-me{
+    background-color: #f4f4f4;
+    padding-bottom: 80px;
+}
+.about-me img{
+    position: relative;
+    left: 45%;
+    border-radius: 50%;
+    height: 120px;
+    margin-bottom: 20px;
+}
+.myname{
+    padding-bottom: 30px;
+    text-align: center;
+}
+.bio-text{
+    //text-align: center;
+    width: 70%;
+    margin-left: 15%;
+    line-height: 145%;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
